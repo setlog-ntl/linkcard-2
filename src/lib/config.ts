@@ -60,11 +60,11 @@ export const siteConfig = {
   siteNameEn: process.env.NEXT_PUBLIC_SITE_NAME_EN || 'My Link Page',
   bio: process.env.NEXT_PUBLIC_BIO || '안녕하세요! 여기서 저의 모든 링크를 확인하세요.',
   bioEn: process.env.NEXT_PUBLIC_BIO_EN || 'Hello! Check out all my links here.',
-  avatarUrl: process.env.NEXT_PUBLIC_AVATAR_URL || null,
+  avatarUrl: process.env.NEXT_PUBLIC_AVATAR_URL || `${_basePath}/images/1772115316346-upload.webp`,
   theme: process.env.NEXT_PUBLIC_THEME || 'aurora',
   bgStyle: (process.env.NEXT_PUBLIC_BG_STYLE || 'aurora') as BgStyle,
   primaryColor: process.env.NEXT_PUBLIC_PRIMARY_COLOR || '#818cf8',
-  cardStyle: (process.env.NEXT_PUBLIC_CARD_STYLE || 'glass') as CardStyle,
+  cardStyle: (process.env.NEXT_PUBLIC_CARD_STYLE || 'rounded') as CardStyle,
   fontFamily: (process.env.NEXT_PUBLIC_FONT_FAMILY || 'system') as FontFamily,
   links: parseJSON<LinkItem[]>(process.env.NEXT_PUBLIC_LINKS, DEMO_LINKS),
   socials: parseJSON<SocialItem[]>(process.env.NEXT_PUBLIC_SOCIALS, [
